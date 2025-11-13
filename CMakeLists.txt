@@ -77,6 +77,13 @@ set(USE_STATIC_MSVC_RUNTIME_LIBRARY OFF CACHE BOOL "Use dynamic CRT for JoltPhys
 set(PHYSICS_REPO_ROOT ${CMAKE_SOURCE_DIR}/third_party/JoltPhysics)
 add_subdirectory(third_party/JoltPhysics/Build JoltBuild)
 
+#include(third_party/JoltPhysics/Jolt/Jolt.cmake)
+#include(third_party/JoltPhysics/JoltViewer/JoltViewer.cmake)
+#include(third_party/JoltPhysics/PerformanceTest/PerformanceTest.cmake)
+#include(third_party/JoltPhysics/TestFramework/TestFramework.cmake)
+#include(third_party/JoltPhysics/Samples/Samples.cmake)
+#include(third_party/JoltPhysics/UnitTests/UnitTests.cmake)
+
 set(ASSIMP_BUILD_TESTS OFF CACHE BOOL "Build Assimp tests" FORCE)
 # 不安装、不打工具/样例/文档/测试，不把警告当错误
 set(ASSIMP_INSTALL OFF CACHE BOOL "" FORCE)
