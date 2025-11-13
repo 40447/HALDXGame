@@ -1,0 +1,43 @@
+# === CMake によって生成されるファイル ===
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+CMakeUserPresets.json
+
+# === CMake のビルドディレクトリ ===
+cmake-build-*/
+/build/
+out/
+
+# === 依存関係（FetchContent など） ===
+_deps/
+
+# === テスト・一時ファイル ===
+Testing/
+*.log
+
+# === IDE: Visual Studio 関連 ===
+.vs/
+*.vcxproj*
+*.sln
+*.suo
+*.user
+*.opensdf
+*.VC.db
+
+# === IDE: JetBrains CLion 関連 ===
+.idea/
+*.iml
+
+# === OS によって生成されるファイル ===
+.DS_Store
+Thumbs.db
+
+# === テスト・一時ファイル ===
+test/
